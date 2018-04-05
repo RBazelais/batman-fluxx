@@ -8,36 +8,40 @@
 
 using System;
 
-namespace cardDeck
-{
+namespace batmanFluxx
+{   
     public class Card
     {
-        string suit;
-        int val;
-        string face;
-        public string suitVal;
+        public string name; //this is what the players see
+
+        int id; //how we reference for conditions check
+        int category_ID; //cat 1 for kprs, cat 2 for crprs, cat 3 for goals
+        Boolean active_State; //true if in list(aka on table), false in either decks or hands
+        string rule; //reworked into logic later
         public Card(string suit, int val) {
-            this.suit = suit;
-            this.val = val;
+            // this.suit = suit;
+            // this.val = val;
          
-            if (val == 1) {
-                this.face = "Ace";
-            }
-            else if (val == 11) {
-                this.face = "Jack";
-            }
-            else if (val == 12) {
-                this.face = "Queen";
-            }
-            else if (val == 13) {
-                this.face = "King";
-            }
-            else {
-                this.face = val.ToString();
-            }
-            this.suitVal = $"{face} of {suit}";
+            // if (val == 1) {
+            //     this.face = "Ace";
+            // }
+            // else if (val == 11) {
+            //     this.face = "Jack";
+            // }
+            // else if (val == 12) {
+            //     this.face = "Queen";
+            // }
+            // else if (val == 13) {
+            //     this.face = "King";
+            // }
+            // else {
+            //     this.face = val.ToString();
+            // }
+            // this.suitVal = $"{face} of {suit}";
             // this.suitVal = face + " of " + suit;
         }
         
     }
 }
+
+

@@ -10,7 +10,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace cardDeck
+namespace batmanFluxx
 {
     
     public class Player
@@ -30,7 +30,7 @@ namespace cardDeck
             Console.WriteLine("********************");
             foreach(Card item in hand) {
                 // Console.WriteLine("The current hand is: ");
-                Console.WriteLine(item.suitVal);
+                Console.WriteLine("yo");
             }
         }
         public void draw(Deck gameDeck) {

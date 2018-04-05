@@ -15,7 +15,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace cardDeck
+namespace batmanFluxx
 {
     
     public class Deck
@@ -27,11 +27,25 @@ namespace cardDeck
 
         }
         public void buildDeck() {
-            string[] suits = {"Hearts", "Diamonds", "Spades", "Clubs"};
-            for (int i = 1; i <= 13; i++) {
-                for (int j = 0; j < suits.Length; j++) {
-                    cards.Add(new Card(suits[j], i));
-                }
+            string[] creeperName = {"Bane","Poison Ivy","The Joker","The Riddler","Catwoman","The Penguin","Harley Quinn","Mr. Freeze","Two-Face"};
+        // string name;
+            string keeperNameArray;
+            string goalNameArray;
+
+            for (int i = 15; i <=23; i++) {
+                // pull from creeper name array
+            }
+            for (int i = 101; i<128; i++) {
+                //pull from goal name array
+            }
+            for (int i = 1; i <= 14; i++) {
+                //pull from keeper name array
+                
+                
+                // for (int j = 0; j < suits.Length; j++) {
+                    // cards.Add(new Card(suits[j], i));
+                // }
+
             }
         }
 
@@ -41,7 +55,7 @@ namespace cardDeck
         }
         public void bugCheck() {
             foreach (Card item in cards) {
-                Console.WriteLine(item.suitVal);
+                Console.WriteLine("hello worlds");
             }
         }
         public void shuffle() {
@@ -71,7 +85,7 @@ namespace cardDeck
             Console.WriteLine("********************");
             Console.WriteLine("The top 5 cards in the deck are: ");
             for (int i = 0; i < 5; i++) {
-                Console.WriteLine(cards[i].suitVal);
+                Console.WriteLine(cards[i]);
             }
         Console.WriteLine("********************");   
     }
