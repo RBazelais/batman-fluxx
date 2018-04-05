@@ -81,7 +81,8 @@ namespace batmanFluxx
                 "Rogues' Gallery",
                 "Backed Intro a Corner!",
                 "Gotham City Sirens",
-                "To the Batpoles"
+                "To the Batpoles",
+                "Utility Belt"
             };
 
             for (int i = 15; i <=23; i++) {
