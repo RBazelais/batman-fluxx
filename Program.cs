@@ -6,7 +6,9 @@ namespace batmanFluxx
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Deck drawDeck = new Deck();
+            drawDeck.shuffle();
+            drawDeck.topCard();
         }
     }
 }

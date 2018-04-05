@@ -343,6 +343,11 @@ Temporary Items
 .bin/*
 .obj/*
 
+### obj and bin too! ###
+.bin/*
+.obj/*
+
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -369,3 +374,4 @@ $RECYCLE.BIN/
 
 .vscode/launch.json
 .vscode/tasks.json
+*.cache
