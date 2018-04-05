@@ -55,8 +55,12 @@ namespace batmanFluxx
                 "Batman"
             };
             string[] goalNameArray = {
-                "Riddle Me This, Batman...",
-                "I am the Night!",
+                "To the Batcave!",
+                "Those Wonderful Toys",
+                "I'll take Care of That, Sir...",
+                "Batman Family",
+                "To the Batpoles",
+                "Utility Belt",
                 "He Left Us a Signal",
                 "Secretly His Daughter",
                 "Stately Wayne Manor",
@@ -64,25 +68,22 @@ namespace batmanFluxx
                 "To the Batmobile!",
                 "He's a Billionaire",
                 "Sidekicks",
+                "I am the Night!",
                 "With Some Help From Alfred",
                 "Secret Tunnel",
-                "Those Wonderful Toys",
                 "The Joker Got Away",
                 "Poison Ivy and Bane",
                 "Black-Tie Bad Guys",
                 "Mad Love",
                 "Green with Villainy",
                 "Cold Cash",
-                "To the Batcave!",
-                "I'll take Care of That, Sir...",
-                "Batman Family",
+                "Riddle Me This, Batman...",
+                "Rogues' Gallery",
                 "Crime Spree",
                 "Bank Robbery in Progress",
-                "Rogues' Gallery",
+                "Gotham City Sirens",                
                 "Backed Intro a Corner!",
-                "Gotham City Sirens",
-                "To the Batpoles",
-                "Utility Belt"
+
             };
 
             //creeper before riddler:
