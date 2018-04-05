@@ -340,8 +340,13 @@ Temporary Items
 !.vscode/settings.json
 !.vscode/extensions.json
 .history
-.bin/*
-.obj/*
+bin/*
+obj/*
+
+### obj and bin too! ###
+bin/*
+obj/*
+
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -369,3 +374,4 @@ $RECYCLE.BIN/
 
 .vscode/launch.json
 .vscode/tasks.json
+*.cache

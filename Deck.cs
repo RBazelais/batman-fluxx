@@ -28,11 +28,11 @@ namespace batmanFluxx
         }
         public void buildDeck() {
             string[] creeperName = {
+                "The Riddler",
+                "Catwoman",
                 "Bane",
                 "Poison Ivy",
                 "The Joker",
-                "The Riddler",
-                "Catwoman",
                 "The Penguin",
                 "Harley Quinn",
                 "Mr. Freeze",
@@ -55,8 +55,12 @@ namespace batmanFluxx
                 "Batman"
             };
             string[] goalNameArray = {
-                "Riddle Me This, Batman...",
-                "I am the Night!",
+                "To the Batcave!",
+                "Those Wonderful Toys",
+                "I'll take Care of That, Sir...",
+                "Batman Family",
+                "To the Batpoles",
+                "Utility Belt",
                 "He Left Us a Signal",
                 "Secretly His Daughter",
                 "Stately Wayne Manor",
@@ -64,34 +68,40 @@ namespace batmanFluxx
                 "To the Batmobile!",
                 "He's a Billionaire",
                 "Sidekicks",
+                "I am the Night!",
                 "With Some Help From Alfred",
                 "Secret Tunnel",
-                "Those Wonderful Toys",
                 "The Joker Got Away",
                 "Poison Ivy and Bane",
                 "Black-Tie Bad Guys",
                 "Mad Love",
                 "Green with Villainy",
                 "Cold Cash",
-                "To the Batcave!",
-                "I'll take Care of That, Sir...",
-                "Batman Family",
+                "Riddle Me This, Batman...",
+                "Rogues' Gallery",
                 "Crime Spree",
                 "Bank Robbery in Progress",
-                "Rogues' Gallery",
+                "Gotham City Sirens",                
                 "Backed Intro a Corner!",
-                "Gotham City Sirens",
-                "To the Batpoles",
-                "Utility Belt"
+
             };
 
-            for (int i = 15; i <=23; i++) {
+            //creeper before riddler:
+            // "Bane","Poison Ivy","The Joker",
+
+            //creepr after riddler: 
+            // ,"Catwoman","The Penguin","Harley Quinn","Mr. Freeze","Two-Face"
+
+            for (int i = 1; i <=2; i++) {
                 // pull from creeper name array
+                int cat_ID = 2;
+                cards.Add(new CreeperCard(i, cat_ID, creeperName[i-1]));
+
             }
-            for (int i = 101; i<128; i++) {
-                //pull from goal name array
-            }
-            for (int i = 1; i <= 14; i++) {
+            // for (int i = 101; i<128; i++) {
+                // pull from goal name array
+            // }
+            // for (int i = 1; i <= 14; i++) {
                 //pull from keeper name array
                 
                 
@@ -99,7 +109,7 @@ namespace batmanFluxx
                     // cards.Add(new Card(suits[j], i));
                 // }
 
-            }
+            // }
         }
 
         public void reset() {
@@ -126,11 +136,12 @@ namespace batmanFluxx
         }
 
         public Card topCard() {
-            // Console.WriteLine("Top card before deal is the {0}",cards[0].suitVal);
+            Console.WriteLine("Top card before deal is the {0}",cards[0].name);
             Card temp = cards[0];
             cards.RemoveAt(0);
-            // Console.WriteLine("Dealt card is the {0}", temp.suitVal);
-            // Console.WriteLine("Top card after deal is the {0}",cards[0].suitVal);
+            Console.WriteLine("Dealt card is the {0}", temp.name);
+            Console.WriteLine("Top card after deal is the {0}",cards[0].name);
+            // Console.WriteLine($"Top card's rule is {cards[0].rule}");
             return temp;
         }
 
