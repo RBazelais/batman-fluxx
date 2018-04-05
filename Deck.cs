@@ -27,18 +27,26 @@ namespace batmanFluxx
 
         }
         public void buildDeck() {
-            string[] creeperName = {"Bane","Poison Ivy","The Joker","The Riddler","Catwoman","The Penguin","Harley Quinn","Mr. Freeze","Two-Face"};
-        // string name;
-            string keeperNameArray;
-            string goalNameArray;
+            string[] creeperName = {"The Riddler", "Catwoman"};
+            // string keeperNameArray;
+            // string goalNameArray;
 
-            for (int i = 15; i <=23; i++) {
+            //creeper before riddler:
+            // "Bane","Poison Ivy","The Joker",
+
+            //creepr after riddler: 
+            // ,"Catwoman","The Penguin","Harley Quinn","Mr. Freeze","Two-Face"
+
+            for (int i = 1; i <=2; i++) {
                 // pull from creeper name array
+                int cat_ID = 2;
+                cards.Add(new Card(i, cat_ID, creeperName[i-1], "I am a rule!"));
+
             }
-            for (int i = 101; i<128; i++) {
-                //pull from goal name array
-            }
-            for (int i = 1; i <= 14; i++) {
+            // for (int i = 101; i<128; i++) {
+                // pull from goal name array
+            // }
+            // for (int i = 1; i <= 14; i++) {
                 //pull from keeper name array
                 
                 
@@ -46,7 +54,7 @@ namespace batmanFluxx
                     // cards.Add(new Card(suits[j], i));
                 // }
 
-            }
+            // }
         }
 
         public void reset() {
@@ -73,11 +81,12 @@ namespace batmanFluxx
         }
 
         public Card topCard() {
-            // Console.WriteLine("Top card before deal is the {0}",cards[0].suitVal);
+            Console.WriteLine("Top card before deal is the {0}",cards[0].name);
             Card temp = cards[0];
             cards.RemoveAt(0);
-            // Console.WriteLine("Dealt card is the {0}", temp.suitVal);
-            // Console.WriteLine("Top card after deal is the {0}",cards[0].suitVal);
+            Console.WriteLine("Dealt card is the {0}", temp.name);
+            Console.WriteLine("Top card after deal is the {0}",cards[0].name);
+            Console.WriteLine($"Top card's rule is {cards[0].rule}");
             return temp;
         }
 
