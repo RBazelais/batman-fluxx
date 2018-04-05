@@ -94,7 +94,7 @@ namespace batmanFluxx
             for (int i = 1; i <=2; i++) {
                 // pull from creeper name array
                 int cat_ID = 2;
-                cards.Add(new Card(i, cat_ID, creeperName[i-1], "I am a rule!"));
+                cards.Add(new CreeperCard(i, cat_ID, creeperName[i-1]));
 
             }
             // for (int i = 101; i<128; i++) {
@@ -140,7 +140,7 @@ namespace batmanFluxx
             cards.RemoveAt(0);
             Console.WriteLine("Dealt card is the {0}", temp.name);
             Console.WriteLine("Top card after deal is the {0}",cards[0].name);
-            Console.WriteLine($"Top card's rule is {cards[0].rule}");
+            // Console.WriteLine($"Top card's rule is {cards[0].rule}");
             return temp;
         }
 
