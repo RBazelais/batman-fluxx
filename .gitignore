@@ -340,12 +340,12 @@ Temporary Items
 !.vscode/settings.json
 !.vscode/extensions.json
 .history
-.bin/*
-.obj/*
+bin/*
+obj/*
 
 ### obj and bin too! ###
-.bin/*
-.obj/*
+bin/*
+obj/*
 
 
 ### Windows ###
