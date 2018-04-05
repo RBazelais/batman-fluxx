@@ -1,4 +1,4 @@
-// To Do
+// TODO:
 // Create a class called "Card"
 
 // Give the Card class a property "stringVal" which will hold the value of the card ex. (Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King). This "val" should be a String

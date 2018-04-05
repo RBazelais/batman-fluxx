@@ -27,10 +27,62 @@ namespace batmanFluxx
 
         }
         public void buildDeck() {
-            string[] creeperName = {"Bane","Poison Ivy","The Joker","The Riddler","Catwoman","The Penguin","Harley Quinn","Mr. Freeze","Two-Face"};
+            string[] creeperName = {
+                "Bane",
+                "Poison Ivy",
+                "The Joker",
+                "The Riddler",
+                "Catwoman",
+                "The Penguin",
+                "Harley Quinn",
+                "Mr. Freeze",
+                "Two-Face"
+            };
         // string name;
-            string keeperNameArray;
-            string goalNameArray;
+            string[] keeperNameArray = {
+                "Bruce Wayne",
+                "Batman Cuffs", 
+                "Batgirl", "Robin", 
+                "Batmobile", 
+                "Batarang", 
+                "The Batcave", 
+                "The Bank", 
+                "Batcomputer", 
+                "Commissioner Gordon", 
+                "Alfred Pennyworth", 
+                "Wayne Manor",
+                "The Bat Signal",
+                "Batman"
+            };
+            string[] goalNameArray = {
+                "Riddle Me This, Batman...",
+                "I am the Night!",
+                "He Left Us a Signal",
+                "Secretly His Daughter",
+                "Stately Wayne Manor",
+                "The Dynamic Duo",
+                "To the Batmobile!",
+                "He's a Billionaire",
+                "Sidekicks",
+                "With Some Help From Alfred",
+                "Secret Tunnel",
+                "Those Wonderful Toys",
+                "The Joker Got Away",
+                "Poison Ivy and Bane",
+                "Black-Tie Bad Guys",
+                "Mad Love",
+                "Green with Villainy",
+                "Cold Cash",
+                "To the Batcave!",
+                "I'll take Care of That, Sir...",
+                "Batman Family",
+                "Crime Spree",
+                "Bank Robbery in Progress",
+                "Rogues' Gallery",
+                "Backed Intro a Corner!",
+                "Gotham City Sirens",
+                "To the Batpoles"
+            };
 
             for (int i = 15; i <=23; i++) {
                 // pull from creeper name array
