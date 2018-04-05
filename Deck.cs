@@ -27,9 +27,64 @@ namespace batmanFluxx
 
         }
         public void buildDeck() {
-            string[] creeperName = {"The Riddler", "Catwoman"};
-            // string keeperNameArray;
-            // string goalNameArray;
+            string[] creeperName = {
+                "The Riddler",
+                "Catwoman",
+                "Bane",
+                "Poison Ivy",
+                "The Joker",
+                "The Penguin",
+                "Harley Quinn",
+                "Mr. Freeze",
+                "Two-Face"
+            };
+        // string name;
+            string[] keeperNameArray = {
+                "Bruce Wayne",
+                "Batman Cuffs", 
+                "Batgirl", "Robin", 
+                "Batmobile", 
+                "Batarang", 
+                "The Batcave", 
+                "The Bank", 
+                "Batcomputer", 
+                "Commissioner Gordon", 
+                "Alfred Pennyworth", 
+                "Wayne Manor",
+                "The Bat Signal",
+                "Batman"
+            };
+            string[] goalNameArray = {
+                "To the Batcave!",
+                "Those Wonderful Toys",
+                "I'll take Care of That, Sir...",
+                "Batman Family",
+                "To the Batpoles",
+                "Utility Belt",
+                "He Left Us a Signal",
+                "Secretly His Daughter",
+                "Stately Wayne Manor",
+                "The Dynamic Duo",
+                "To the Batmobile!",
+                "He's a Billionaire",
+                "Sidekicks",
+                "I am the Night!",
+                "With Some Help From Alfred",
+                "Secret Tunnel",
+                "The Joker Got Away",
+                "Poison Ivy and Bane",
+                "Black-Tie Bad Guys",
+                "Mad Love",
+                "Green with Villainy",
+                "Cold Cash",
+                "Riddle Me This, Batman...",
+                "Rogues' Gallery",
+                "Crime Spree",
+                "Bank Robbery in Progress",
+                "Gotham City Sirens",                
+                "Backed Intro a Corner!",
+
+            };
 
             //creeper before riddler:
             // "Bane","Poison Ivy","The Joker",
@@ -40,7 +95,7 @@ namespace batmanFluxx
             for (int i = 1; i <=2; i++) {
                 // pull from creeper name array
                 int cat_ID = 2;
-                cards.Add(new Card(i, cat_ID, creeperName[i-1], "I am a rule!"));
+                cards.Add(new CreeperCard(i, cat_ID, creeperName[i-1]));
 
             }
             // for (int i = 101; i<128; i++) {
@@ -86,7 +141,7 @@ namespace batmanFluxx
             cards.RemoveAt(0);
             Console.WriteLine("Dealt card is the {0}", temp.name);
             Console.WriteLine("Top card after deal is the {0}",cards[0].name);
-            Console.WriteLine($"Top card's rule is {cards[0].rule}");
+            // Console.WriteLine($"Top card's rule is {cards[0].rule}");
             return temp;
         }
 
