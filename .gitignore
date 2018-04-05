@@ -343,6 +343,11 @@ Temporary Items
 !.vscode/extensions.json
 .history
 
+### obj and bin too! ###
+.bin/*
+.obj/*
+
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
